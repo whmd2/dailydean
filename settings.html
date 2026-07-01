@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Settings</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>⚙️ Settings</h1>
+
+  <button onclick="resetData()">Reset Progress</button>
+
+  <a class="btn" href="index.html">🏠 Home</a>
+
+</div>
+
+<script src="js/storage.js"></script>
+
+<script>
+function resetData() {
+  localStorage.clear();
+  alert("Progress reset!");
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
